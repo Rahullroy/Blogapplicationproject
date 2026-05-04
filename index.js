@@ -19,15 +19,15 @@ app.get('/new',(req,res)=>{
   res.render("new");
 });
 
+
+app.get('/allblogs',(req,res)=>{
+  res.render("allblogs",{post : post});
+});
+
 app.post("/delete/:id",(req, res) => {
     let id = req.params.id; // Changed from index to id for clarity
     post.splice(id, 1);
     res.redirect("/allblogs");
-});
-
-
-app.get('/allblogs',(req,res)=>{
-  res.render("allblogs",{post : post});
 });
 
 app.post("/submit", (req, res) => {
