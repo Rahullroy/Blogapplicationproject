@@ -17,10 +17,19 @@
     <form action="/delete/<%=i%>" method="POST">
         <button type="submit">DELETE BLOG</button>
     </form>
+    <br>
 
-    <hr>
+    <form action="/edit/<%= i %>" method="GET">
+    <button type="submit">EDIT</button>
+    </form>
+
+     <hr>
 
 <% } %>
+
+
+
+
 
 </body>
 </html>

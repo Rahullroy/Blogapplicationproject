@@ -2,7 +2,7 @@ const fs = require("fs");
 const express = require("express");
 const app = express();
 const path = require("path");
-const PORT = 4000;
+const PORT = 4500;
 
 
 app.use(express.urlencoded({ extended: true }));
@@ -40,6 +40,24 @@ app.post("/submit", (req, res) => {
   post.push(newpost);
 
   res.redirect("/allblogs");
+});
+
+app.get("/edit/:index", (req, res) => {
+    let index = req.params.index;
+    let blog = post[index];
+
+    res.render("edit", { blog: blog, index: index });
+});
+
+app.post("/update/:index", (req, res) => {
+    let index = req.params.index;
+
+    post[index] = {
+        title: req.body.title,
+        content: req.body.content
+    };
+
+    res.redirect("/allblogs");
 });
 
 app.listen(PORT, () => {
