@@ -2,13 +2,14 @@ const fs = require("fs");
 const express = require("express");
 const app = express();
 const path = require("path");
-const PORT = 4500;
+const PORT = 4560;
 
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.set("view engine","ejs");
 app.set("views",path.resolve("./views"));
+app.use(express.static("public"));
 
 let post = [];
 
