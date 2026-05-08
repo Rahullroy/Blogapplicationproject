@@ -108,13 +108,13 @@ button:active {
     padding-left: 15px;
 }
 .title{
-    color: black;
+    color: rgb(15, 36, 95);
     size: 20px;
     text-decoration: underline;
     margin: 10px;
 }
 
 h4{
-    color: #fbe6e6;
+    color: #231414;
     margin: 10px;
 }

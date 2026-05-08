@@ -1,0 +1,62 @@
+/* Center everything and add your background */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    /* Use the same background as your home page for consistency */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://tse1.mm.bing.net/th/id/OIP.Bi3CiDP72Dy9PxvEJ_OtFQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 60px;
+    border-radius: 15px;
+    border: 4px groove rgba(5, 2, 2, 0.638);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+    max-width: 500px;
+}
+
+input, textarea {
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(47, 3, 3, 0.438);
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #be7920;
+}
+
+button {
+    padding: 15px;
+    background: #be7920b5;
+    color: white;
+    border: 2px groove rgb(185, 154, 154);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #a36518;
+    transform: scale(1.02);
+}

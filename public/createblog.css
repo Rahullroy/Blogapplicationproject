@@ -1,0 +1,78 @@
+body{
+  height: 100%;
+  background: rgb(176, 202, 59);
+  margin: 0%;
+  background-size: cover;
+  background: linear-gradient(rgba(57, 48, 48, 0.6), rgba(187, 170, 170, 0.6)), 
+                url(https://th.bing.com/th/id/OIP.OpAMvW0fmb7EFHeqFxDl1gHaE8?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* The container holding the form */
+form {
+    background: rgba(28, 26, 28, 0.261);
+    backdrop-filter: blur(10px);
+    padding: 80px;
+    border-radius: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.518);
+    box-shadow: 0 15px 35px rgba(186, 85, 85, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px; /* Space between input, textarea, and button */
+}
+
+/* Styling the Input and Textarea */
+input, textarea {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    padding-right: 1px;
+}
+
+/* Change border color when clicking inside */
+input:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #be7920; /* Matching your theme color */
+    box-shadow: 0 0 10px rgba(190, 121, 32, 0.5);
+}
+
+/* Placeholder text color */
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Styling the Publish Button */
+button {
+    background: #be7920;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #a36518;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
