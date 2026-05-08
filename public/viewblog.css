@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This ensures padding doesn't increase element width */
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevents accidental horizontal scrolling */
+}
+header{
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgba(4, 4, 96, 0.335);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Using a semi-transparent version of your color for a modern feel */
+    background: rgba(236, 189, 127, 0.85); 
+    backdrop-filter: blur(10px);
+    padding: 1px 5%;
+    position: sticky; /* Stays at the top when you scroll */
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 16px;
+
+    
+}
+
+/* Logo Styling */
+.logo {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #2d3436;
+    text-transform: uppercase;
+}
+
+.logo-accent {
+    color: #be7920; /* Your darker orange/brown color */
+}
+
+body{
+  background-size: cover;
+  background: linear-gradient(rgba(57, 48, 48, 0.6), rgba(187, 170, 170, 0.6)), 
+                url(https://img.freepik.com/premium-photo/abstract-background-design-images-wallpaper-ai-generated_643360-212308.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+}
+
+.block{
+    text-align: left;
+}
+
+button {
+    margin: 4px;
+
+    /* 1. Basic Reset & Padding */
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    /* 2. Colors & Typography */
+    background: rgba(11, 6, 112, 0.339); /* Semi-transparent */
+    color: white;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    /* 3. Rounded Corners & Shadow */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.096);
+    
+    /* 4. Smooth Transition */
+    transition: all 0.3s ease;
+    
+    /* Optional: Glass effect border */
+    border: 1px solid rgba(72, 7, 7, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+/* 5. Hover Animation */
+button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px); /* Button thoda upar uthega */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Click effect (Active state) */
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.block{
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.2;
+    border-left: 2px solid #be7920; /* Vertical line for style */
+    padding-left: 15px;
+}
+.title{
+    color: black;
+    size: 20px;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+h4{
+    color: #fbe6e6;
+    margin: 10px;
+}

@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Blogs</title>
+
+    <link rel="stylesheet" href="viewblog.css">
 </head>
 <body>
+<header>
+      
+      <div class="logo">BLOGS<span class="logo-accent">WEB</span></div>
+      <h1> VIEW ALL BLOGS </h1>
 
-<h1>ALL BLOGS</h1>
+</header>
 
-<% for(let i = 0; i < post.length; i++) { %>
 
-    <h2><%= post[i].title %></h2>
-    <p><%= post[i].content %></p>
+<div class="block">
+    <% for(let i = 0; i < post.length; i++) { %>
+
+    <h1 class = "title"><%= post[i].title %></h1>
+    <h4><%= post[i].content %></h4>
 
     <form action="/delete/<%=i%>" method="POST">
-        <button type="submit">DELETE BLOG</button>
+        <button class="deletebuttn" type="submit">DELETE BLOG</button>
     </form>
-    <br>
 
     <form action="/edit/<%= i %>" method="GET">
     <button type="submit">EDIT</button>
@@ -26,6 +33,8 @@
      <hr>
 
 <% } %>
+
+</div>
 
 
 
